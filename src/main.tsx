@@ -8,7 +8,7 @@ import RegistrationScreen from "./views/RegistrationScreen.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/login" element={<LoginScreen />} />
