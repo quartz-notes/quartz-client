@@ -10,7 +10,7 @@ function App() {
   return (
     <StrictMode>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <BrowserRouter>
+        <BrowserRouter basename="/quartz-client">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
