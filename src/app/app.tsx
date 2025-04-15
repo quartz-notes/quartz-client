@@ -1,3 +1,4 @@
+import LandingPage from '@/pages/landing-page';
 import LoginPage from '@/pages/login-page';
 import SignUpPage from '@/pages/signup-page';
 import { StrictMode } from 'react';
@@ -12,7 +13,8 @@ function App() {
 			<ThemeProvider defaultTheme='system' storageKey='vite-ui-theme'>
 				<BrowserRouter basename={import.meta.env.BASE_URL}>
 					<Routes>
-						<Route path='/' element={<HomePage />} />
+						<Route path='/' element={<LandingPage />} />
+						<Route path='/workspace' element={<HomePage />} />
 						<Route path='/login' element={<LoginPage />} />
 						<Route path='/signup' element={<SignUpPage />} />
 					</Routes>
