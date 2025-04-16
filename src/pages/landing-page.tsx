@@ -18,10 +18,10 @@ export default function LandingPage() {
 				Дайте волю своим мыслям
 			</p>
 			<div className='flex gap-4'>
-				<Link to='/signup' className='underline underline-offset-4'>
+				<Link to='/workspace' className='underline underline-offset-4'>
 					Попробовать
 				</Link>
-				<Link to='/login' className='underline underline-offset-4'>
+				<Link to='/workspace' className='underline underline-offset-4'>
 					Войти
 				</Link>
 			</div>
