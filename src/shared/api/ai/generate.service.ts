@@ -4,7 +4,7 @@ export default async function generateBlocks(prompt: string) {
   useServerStore.setState({ state: "generating" });
   try {
     const response = await fetch(
-      `http://localhost:8080/api/ai/parse?prompt=${prompt}`,
+      `https://quartz-server-python.onrender.com/api/ai/parse?prompt=${prompt}`,
       {
         headers: {
           "Content-Type": "application/json",

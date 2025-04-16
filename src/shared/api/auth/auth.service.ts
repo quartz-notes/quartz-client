@@ -23,7 +23,7 @@ export async function login(email: string, password: string) {
 
 export async function signup(email: string, name: string, password: string) {
 	const response = await fetch(
-		`http://localhost:8080/api/ai/auth/signup?email=${email}&name=${name}&password=${password}`,
+		`https://quartz-server-python.onrender.com/api/ai/auth/signup?email=${email}&name=${name}&password=${password}`,
 		{
 			headers: {
 				'Content-Type': 'application/json',

@@ -4,7 +4,7 @@ export default async function getNotes() {
 	const accessToken = getAccessToken();
 
 	const response = await fetch(
-		`http://localhost:8080/api/ai/auth/refresh?accessToken=${accessToken}`,
+		`https://quartz-server-python.onrender.com/api/ai/auth/refresh?accessToken=${accessToken}`,
 		{
 			headers: {
 				'Content-Type': 'application/json',

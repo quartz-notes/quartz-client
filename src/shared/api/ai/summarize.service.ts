@@ -4,7 +4,7 @@ export default async function summarize(prompt: string) {
   useServerStore.setState({ state: "generating" });
 
   const response = await fetch(
-    `http://localhost:8080/api/ai/summarize?prompt=${prompt}`,
+    `https://quartz-server-python.onrender.com/api/ai/summarize?prompt=${prompt}`,
     {
       headers: {
         "Content-Type": "application/json",
