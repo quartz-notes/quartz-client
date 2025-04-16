@@ -1,5 +1,4 @@
 import { useIsMobile } from '@/app/hooks/use-mobile';
-import Iphone15Pro from '@/components/magicui/iphone-15-pro';
 import { Ripple } from '@/components/magicui/ripple';
 import { Safari } from '@/components/magicui/safari';
 import { Link } from 'react-router';
@@ -27,10 +26,8 @@ export default function LandingPage() {
 				</Link>
 			</div>
 			<Ripple />
-			<div className='absolute md:bottom-[-60%] bottom-[-40%] p-10'>
-				{isMobile ? (
-					<Iphone15Pro className='size-full' src='/workspace-m.png' />
-				) : (
+			<div className='absolute lg:bottom-[-60%] bottom-[-40%] p-10'>
+				{!isMobile && (
 					<Safari
 						url='https://quartz-notes.github.io/'
 						mode='simple'

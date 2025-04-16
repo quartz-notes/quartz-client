@@ -1,30 +1,26 @@
 import { AppSidebar } from '@/components/app-sidebar/app-sidebar';
 import Editor from '@/components/editor/editor';
 import NoteBreadcrumb from '@/components/note-breadcrumb/note-breadcrumb';
-import { updateTokens } from '@/shared/api/auth/auth.service';
-import { getAccessToken, getRefreshToken } from '@/shared/api/auth/jwt.service';
 import { Separator } from '@/shared/ui/separator';
 import {
 	SidebarInset,
 	SidebarProvider,
 	SidebarTrigger,
 } from '@/shared/ui/sidebar';
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router';
 
 export default function HomePage() {
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
-	useEffect(() => {
-		if (!getRefreshToken()) {
-			navigate('/login');
-		}
-		if (!getAccessToken()) {
-			updateTokens().then(() => {
-				console.log('tokens updated');
-			});
-		}
-	});
+	// useEffect(() => {
+	// 	if (!getRefreshToken()) {
+	// 		navigate('/login');
+	// 	}
+	// 	if (!getAccessToken()) {
+	// 		updateTokens().then(() => {
+	// 			console.log('tokens updated');
+	// 		});
+	// 	}
+	// });
 
 	return (
 		<SidebarProvider>
